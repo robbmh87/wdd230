@@ -12,9 +12,10 @@
 <body>
     <div id="content">
         <header>
-            <a id="logo_link" href="index.html">
-                <img class="logo" src="images/me.jpg" alt="me">
-                <h1>Robb Hoffman</h1>
+
+            <img class="logo" src="images/me.jpg" alt="me">
+            <h1>Robb Hoffman</h1>
+
 
         </header>
 
@@ -51,10 +52,18 @@
 
         <footer>
             <P> &copy; 2023<br>Robb Michael Hoffman <br> Utah</P>
-            <P>Last Modification: </P>
-
+            <button onclick="geeks()">Last Modification:</button>
+            <p id="sudo"></p>
+            <script>
+                /* Function to use lastModified property */
+                function geeks() {
+                    let x = document.lastModified;
+                    document.getElementById("sudo").innerHTML = x;
+                }
+            </script>
         </footer>
     </div>
+    <script src "scripts/getdates.js"></script>
 </body>
 
 </html>
