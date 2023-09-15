@@ -13,7 +13,7 @@ header {
 
 h1{
   color: white;
-  grid-column: 3/4;
+  grid-column: 3/6;
   padding: 50px;
   top: 2px;
 }
