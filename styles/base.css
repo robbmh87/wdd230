@@ -54,16 +54,17 @@ div {
 }
 
 nav {
-  text-align: center;
+  align-items: center;
+	justify-content: center;
   background-color: black;
   font-size: 24px;
   border-style:groove;
   display: grid;
-  display: flex;
   padding: 1rem;
   margin: 0 auto;
   text-decoration: none;
   max-width: 800px;
+  display: flex;
 }
 
 nav ul {
@@ -85,7 +86,6 @@ nav a {
   list-style: none;
   margin: -5px;
   padding: 0;
-  display: flex;
   justify-content: space-around;
   text-decoration: none;
   display: block;
@@ -144,58 +144,4 @@ footer {
 
 body {
 	font-family: "Sansita", sans-serif;
-}
-
-/* mobile **************************/
-header {
-	background-color: #bbb;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-header,
-main {
-	max-width: 767px;
-	margin: 0 auto;
-}
-
-h1 {
-	font-size: 2rem;
-}
-
-nav {
-	background-color: #36454f;
-	margin: 0 auto;
-	max-width: 800px;
-}
-nav ul {
-	list-style-type: none;
-}
-nav a {
-	display: block;
-	color: #fff;
-	text-align: center;
-	padding: 1rem;
-	text-decoration: none;
-}
-
-nav a:hover {
-	border: 1px solid #fff;
-}
-
-.active {
-	color: yellow;
-}
-
-/* Larger Views ******************************/
-@media (min-width: 640px) {
-	nav ul {
-		display: flex;
-	}
-	nav ul li {
-		flex: 1 1 100%;
-	}
 }
