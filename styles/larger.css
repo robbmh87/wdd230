@@ -7,7 +7,6 @@
   main {
     grid-template-columns: 1fr 1fr;
   }
-
   * {
     margin: 0;
     padding: 0;
@@ -27,19 +26,13 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  header,
-  main {
-    max-width: 767px;
-    margin: 0 auto;
-  }
 
   h1 {
     font-size: 2rem;
   }
 
   nav {
-    margin: 0 auto;
-    max-width: 800px;
+    flex-direction: row;
   }
   nav ul {
     list-style-type: none;
@@ -68,5 +61,8 @@
     nav ul li {
       flex: 1 1 100%;
     }
+  }
+  main h2{
+    grid-column: 1/3;
   }
 }
