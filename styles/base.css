@@ -18,22 +18,9 @@ h1{
   top: 2px;
 }
 
-.page {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: .5rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 0;
-}
 
 body {
-  font: 400 16px / 1.5 Montserrat, Helvetica, sans-serif;
+  font: 400 16px / 1.5 Helvetica, sans-serif;
   margin: 0;
 }
 
@@ -59,12 +46,11 @@ nav {
   background-color: black;
   font-size: 24px;
   border-style:groove;
-  display: grid;
   padding: 1rem;
   margin: 0 auto;
   text-decoration: none;
   max-width: 800px;
-  display: flex;
+  display: grid;
 }
 
 nav ul {
@@ -136,12 +122,60 @@ footer {
   min-height: 50px;
 }
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 body {
 	font-family: "Sansita", sans-serif;
+}
+
+
+
+/* mobile **************************/
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header,
+main {
+	max-width: 767px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+nav {
+	margin: 0 auto;
+	max-width: 800px;
+}
+nav ul {
+	list-style-type: none;
+}
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	border: 1px solid #fff;
+}
+
+.active {
+	color: yellow;
+}
+
+/* Larger Views ******************************/
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
 }
