@@ -1,5 +1,47 @@
-body {
-	font-size: 16px;
-	font-family: "Sansita", Ubuntu, sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+  color: white;
 }
 
+h1 {
+  color: #fff;
+  font-size: 5rem;
+  margin-left: 1rem;
+}
+h2 {
+	font-size: 3rem;
+}
+
+
+main {
+	text-align: center;
+	margin: 1.5rem 1rem;
+	color:rgb(255, 255, 255);
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+ul {
+	list-style-type: none;
+  }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  background-color: #5b5d5d;
+}
+.banner{
+	margin-top: 5rem;
+	background-color: rgb(132, 132, 132);
+	color:rgb(255, 255, 255);
+	text-align: center;
+}
