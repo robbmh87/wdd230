@@ -11,23 +11,21 @@ header {
   grid-column: 2/3;
 }
 
-h1{
+h1 {
   color: white;
   grid-column: 3/6;
   padding: 50px;
   top: 2px;
 }
 
-
 body {
   font: 400 16px / 1.5 Helvetica, sans-serif;
   margin: 0;
 }
 
-
 main {
   display: grid;
-  grid-template-columns: 1fr;;
+  grid-template-columns: 1fr;
 }
 
 h2 {
@@ -41,10 +39,10 @@ div {
 
 nav {
   align-items: center;
-	justify-content: center;
+  justify-content: center;
   background-color: black;
   font-size: 24px;
-  border-style:groove;
+  border-style: groove;
   padding: 1rem;
   text-decoration: none;
   display: flex;
@@ -63,10 +61,9 @@ nav a:hover {
   color: yellow;
 }
 
-
 nav a {
   text-decoration: none;
-  color:white;
+  color: white;
   list-style: none;
   margin: -5px;
   padding: 0;
@@ -74,8 +71,6 @@ nav a {
   text-decoration: none;
   display: block;
 }
-
-
 
 nav.home {
   text-align: center;
@@ -90,134 +85,112 @@ h3 {
   background-color: rgb(0, 110, 182);
   color: white;
   font-size: 24px;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
-li{
+li {
   text-align: left;
-    list-style-type: none;
-    margin: 0;
-    padding: .5rem;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0.5rem;
+}
 
 .Card1 {
-  border-style:groove;
+  border-style: groove;
 }
 
 .card2 {
-  border-style:groove;
+  border-style: groove;
 }
 
 footer {
   text-align: center;
-  background-color:rgb(0, 110, 182);
-  color:white;
+  background-color: rgb(0, 110, 182);
+  color: white;
   padding: 0.5rem;
   text-align: center;
   min-height: 50px;
 }
 
 body {
-	font-family: "Sansita", sans-serif;
+  font-family: "Sansita", sans-serif;
 }
 
 
-
-/* mobile **************************/
-@media only screen and (max-width: 600px) {
-  .mobileShow {display: inline;}
-
-header {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-header,
-main {
-	max-width: 767px;
-	margin: 0 auto;
-}
-
-h1 {
-	font-size: 2rem;
-}
-
-nav ul {
-	list-style-type: none;
-}
-
-nav a {
+/* Mobile View ***************/
+#menu {
 	display: block;
-	color: #000000;
-	text-align: center;
-	padding: 1rem;
+	font-size: 2rem;
+	font-weight:700;
 	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #eee;
+	color: #000;
 }
 
-nav a:hover {
-	border: 1px solid #fff;
-}
-
-.active {
-	color: yellow;
-}
-
-#menu{
-  display: block;
-  font-size: 2rem;
-  font-weight:700;
-  text-decoration: none;
-  padding: .5rem .75rem;
-  background-color: #eee;
-  color:#000;
-}
 #menu::before {
-  content: "≡";
+	content: "≡";
 }
 
 nav {
-  background-color:aquamarine;
+	background-color: rgb(0, 0, 0);
 }
 .navigation {
-  list-style: none;
-  margin: 0 auto;
-  max-width: 760px;
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
 }
+
 .navigation li {
-  display: none;
+	display: none;
 }
 .navigation a {
-  display: block;
-  padding: 0.75rem;
-  text-align: left;
-  text-decoration: none;
-  color:black;
-  font-weight:700;
-  transition: 0.5s;
-  font-size:clamp(1rem,2vmin,1.5rem);
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
 }
+
 .navigation a:hover, navigation a:active {
-  color: black;
-  background-color:black;
+	color: white;
+	background-color: black;
 }
 
 .show li {
-  display: block;
+	display: block;
 }
+
 #menu.show::before {
-  content: "x";
+	content: "X";
 }
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
+@media only screen and (min-width: 40em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
 }
 
 /* Larger Views ******************************/
 @media (min-width: 640px) {
-	nav ul {
-		display: flex;
-	}
-	nav ul li {
-		flex: 1 1 100%;
-	}
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1 1 100%;
+  }
 }
