@@ -116,6 +116,10 @@ body {
   font-family: "Sansita", sans-serif;
 }
 
+.card2 h3,p {
+  padding: 0.5rem;
+}
+
 
 /* Mobile View ***************/
 #menu {
