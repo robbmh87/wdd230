@@ -23,17 +23,19 @@
             <img class="logo" src="images/logo.jpg" alt="Logo">
 
         </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="discover.html">Discover our History</a>
-            <a href="directory.html">Directory</a>
-            <a href="join.html">Join Us </a>
-            <a href="contact.html">Contact Us</a>
-            <div id="mode">
-                🕶️
-            </div>
-
+        <a id="menu" href="#"> </a> 
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover our History</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join Us </a>
+                <a href="contact.html">Contact Us</a>
+                <div id="mode">
+                    🕶️
+                </div>
+     
         </nav>
+        <script src=scripts/menu.js></script>
     </header>
 
     <main class="home-grid">
@@ -47,8 +49,8 @@
 
             </div>
         </div>
-      
-        <section class = "events">
+
+        <section class="events">
             <H2>EVENTS Happening this month!</H2>
             <ul>
                 <li>
@@ -80,40 +82,40 @@
                 </LI>
             </ul>
         </section>
-        <section class = "weather">
-      
+        <section class="weather">
+
             <h2>
                 Current Weather
-                
+
             </h2>
-            <img id="Weather" src="images/currentweather.jpg" alt="weather">      
+            <img id="Weather" src="images/currentweather.jpg" alt="weather">
         </section>
 
-        </main>
+    </main>
 
-        <footer>
-            <P> &copy; 2023<br>Robb Michael Hoffman <br> Utah</P>
-            <section>
+    <footer>
+        <P> &copy; 2023<br>Robb Michael Hoffman <br> Utah</P>
+        <section>
 
-                <h2> Our Address:</h2>
-                <h3> 10 East 4800 South. Murray, UT 84107. </h3>
-            </section>
-            <button onclick="geeks()">Last Modification:</button>
-            <p id="sudo"></p>
-            <script>
-                /* Function to use lastModified property */
-                function geeks() {
-                    let x = document.lastModified;
-                    document.getElementById("sudo").innerHTML = x;
-                }
-            </script>
+            <h2> Our Address:</h2>
+            <h3> 10 East 4800 South. Murray, UT 84107. </h3>
+        </section>
+        <button onclick="geeks()">Last Modification:</button>
+        <p id="sudo"></p>
+        <script>
+            /* Function to use lastModified property */
+            function geeks() {
+                let x = document.lastModified;
+                document.getElementById("sudo").innerHTML = x;
+            }
+        </script>
 
-            <P>
-                Current Weather
-            </P>
-        </footer>
-        <script src=scripts/scripts.js></script>
-        <script src="scripts/getdates.js"></script>
+        <P>
+            Current Weather
+        </P>
+    </footer>
+    <script src=scripts/scripts.js></script>
+    <script src="scripts/getdates.js"></script>
 </body>
 
 </html>
