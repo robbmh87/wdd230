@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Robb Hoffman">
     <meta name="description" content="Chamber website">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -24,32 +25,95 @@
         </a>
         <nav>
             <a href="index.html">Home</a>
-            <a href="background.html">Something</a>
-            <a href="reviews.html">Cool</a>
-            <a href="team.html">To GO </a>
-            <a href="contactus.html">Here</a>
+            <a href="discover.html">Discover our History</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join Us </a>
+            <a href="contact.html">Contact Us</a>
+            <div id="mode">
+                🕶️
+            </div>
 
         </nav>
     </header>
-    <main>
+
+    <main class="home-grid">
+        <h1>Murray City Commerce</h1>
 
         <div id="hero">
-            <div id="hero-box">
-                <div id="hero-text">
-                    <h1>Murray City Commerce</h1>
-                    <img id="hero.jpg" src="images/hero.jpg" alt="Murray City">
-                </div>
+
+            <div id="hero-pic">
+                <img id="hero.jpg" src="images/hero.jpg" alt="Murray City">
+
+
             </div>
-            <section id="hero-msg">
-                <h1 class="home-title"></h1>
+        </div>
+      
+        <section class = "events">
+            <H2>EVENTS Happening this month!</H2>
+            <ul>
+                <li>
+                    Business Alliance
+                </li>
+                <li>
+                    Monthly Learning Luncheons
+                </li>
+                <li>
+                    Utah Women in Business
+                </li>
+                <LI>
+                    Economic Development
+                </LI>
+                <li>
+                    Political Debates​
+                </li>
+                <LI>
+                    Memorial Classic Golf Tournament
+                </LI>
+                <li>
+                    Halloween on Main Street
+                </li>
+                <LI>
+                    Travel Program Meeting
+                </LI>
+                <LI>
+                    New Resident Welcome Meeting
+                </LI>
+            </ul>
+        </section>
+        <section class = "weather">
+      
+            <h2>
+                Current Weather
+                
+            </h2>
+            <img id="Weather" src="images/currentweather.jpg" alt="weather">      
+        </section>
 
+        </main>
+
+        <footer>
+            <P> &copy; 2023<br>Robb Michael Hoffman <br> Utah</P>
+            <section>
+
+                <h2> Our Address:</h2>
+                <h3> 10 East 4800 South. Murray, UT 84107. </h3>
             </section>
+            <button onclick="geeks()">Last Modification:</button>
+            <p id="sudo"></p>
+            <script>
+                /* Function to use lastModified property */
+                function geeks() {
+                    let x = document.lastModified;
+                    document.getElementById("sudo").innerHTML = x;
+                }
+            </script>
 
-    </main>
-    <footer>
-        <P> &copy; 2023<br>Robb Michael Hoffman <br> Utah</P>
-
-    </footer>
+            <P>
+                Current Weather
+            </P>
+        </footer>
+        <script src=scripts/scripts.js></script>
+        <script src="scripts/getdates.js"></script>
 </body>
 
 </html>
