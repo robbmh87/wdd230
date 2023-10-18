@@ -77,7 +77,14 @@
 
             <section class="card2">
                 <h3>Information</h3>
-                <p>Weather: Cold</p>
+                <p>Today's Weather
+                    <ul> 
+                       <li>High: 57&deg;</li>
+                       <li>Low: 37&deg;</li>
+                       <li>Chance of Precipitation: 45%</li>
+                       <li>Wind: 15mph NW</li>
+                       <li>Wind Chill: <span id="windChill"></span>&deg;</li>  
+                </ul> </p>
                 <p>Number of Visits: 15</p>
             </section>
 
@@ -101,6 +108,7 @@
         </footer>
     </div>
     <script src=scripts/getdates.js></script>
+    <script src="scripts/windchill.js"></script>
 
 </body>
 
