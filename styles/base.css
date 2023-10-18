@@ -6,7 +6,6 @@ header {
 }
 
 #hero-img {
-  display: grid;
 display: grid;
 grid-template-columns: 1fr 3fr 1fr;
 margin-top: -200px; 
@@ -15,19 +14,27 @@ display: flex;
 }
 
 .herolabel {
-	position: absolute;
-	top: 450px;
-	left: 150px;
-	background: radial-gradient(#fff, #4D5B97);
-	border: 1px solid rgba(0,0,0,.75);
-	padding: 1.5rem;
-	box-shadow: 0 0 3rem #fff;
-	opacity: 0.75;
-	/* Buenas */
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(30%, 10%);
+  top: 450px;
+  left: 150px;
+  background: radial-gradient(#fff, #4D5B97);
+  border: 1px solid rgba(0,0,0,.75);
+  padding: 1.5rem;
+  box-shadow: 0 0 3rem #fff;
+  opacity: 0.75;
+  /*Buenas*/:;
+  -webkit-transform: translate(30%, 10%);
+  -moz-transform: translate(30%, 10%);
+  -ms-transform: translate(30%, 10%);
+  -o-transform: translate(30%, 10%);
 }
 
 .herolabel p {
-	margin: 0;
+	margin-left: 0;
 	padding: .25rem;
 	font-weight: 700;
 	font-size: 2rem;
