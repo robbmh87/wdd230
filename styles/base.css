@@ -10,6 +10,13 @@ display: grid;
 grid-template-columns: 1fr 3fr 1fr;
 margin-top: -200px; 
 display: flex;
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 
 }
 
@@ -26,7 +33,6 @@ display: flex;
   padding: 1.5rem;
   box-shadow: 0 0 3rem #fff;
   opacity: 0.75;
-  /*Buenas*/:;
   -webkit-transform: translate(25em, 10%);
   -moz-transform: translate(25em, 10%);
   -ms-transform: translate(25em, 10%);
