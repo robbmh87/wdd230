@@ -8,9 +8,7 @@
     <title>Robb Hoffman WDD 230 - Web Frontend Development</title>
     <meta name="author" content="Robb Hoffman">
     <meta name="description" content="Course Home Page">
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="Robb Hoffman Course Page">
     <meta property="og:type" content="website">
@@ -44,56 +42,17 @@
 
         </div>
 
-        <script src=scripts/menu.js></script>
         <main>
-
-            <h2>WDD 230: Web Frontend Development</h2>
-
-            <section class="card">
-                <h3>"Learning Activities"</h3>
-                <ul>
-                    <li>
-                        <a href="lesson01/holygrail.htm">01: Holy Layout | </a><a
-                            href="https://codepen.io/Robb-Hoffman/pen/LYMWveJ">JS pen </a>
-                    </li>
-                    <li>
-                        <a href="lesson02/design-principles.html">02: Design Principles Document</a>
-                    </li>
-                    <li>
-                        <a href="images/combinators.png">03: Combinators | </a>
-                        <a href="https://codepen.io/Robb-Hoffman/pen/jOXaJqM">Psuedo Pen | </a>
-                        <a href="https://codepen.io/Robb-Hoffman/pen/rNoYRLG">Responsive</a>
-                        <a href="lesson03/lazyload.html"> Lazy Load</a>
-                    </li>
-                    <li>
-                        <a href="https://codepen.io/Robb-Hoffman/pen/MWZqQwj">04: Pseudo Class</a>
-                    </li>
-                    <li>
-                        <a href="lesson05/bom.html">05: Favorite Book of Mormon</a>
-                        <a href="images/landscape.jpg.webp">Landscape</a>
-                        <a href="lesson03/reponsive-images.html">Reponsive Images</a>
-                    </li>
-                    <li>
-                        <a href="https://codepen.io/pen/">07: Date Math</a>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="card2">
-                <h3>Information</h3>
-                <p>Today's Weather
-                    <ul> 
-                       <li>High: 57&deg;</li>
-                       <li>Low: 37&deg;</li>
-                       <li>Chance of Precipitation: 45%</li>
-                       <li>Wind: 15mph NW</li>
-                       <li>Wind Chill: <span id="windChill"></span>&deg;</li>  
-                </ul> </p>
-                <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
-            </section>
-
+            <h1>📅 Date Math (Days Between Dates)</h1>
+            <p>See the ⚙️<a href="https://codepen.io/blazzard-jason/pen/ExeBjab" target="_blank">Date.now() TimeStamp</a> &nbsp; pen for Date.now() information.</p>
+            <hr>
+            <p><span class="label">Date.now(): </span> <span id="today"></span> &nbsp;<span class="smaller">(milliseconds)</span></p>
+            <p><span class="label">Next Christmas: </span> <span id="christmas"></span> &nbsp; <span class="smaller">(milliseconds)</span></p>
+            <p><span class="label">🎄Christmas - Date: </span> <span id="christmasDate"></span></p>
+            <hr>
+            <p><span class="label">Days until Christmas: </span> <span id="daysleft"></span></p>
+        
         </main>
-
         <footer>
             <P> &copy; 2023<br>Robb Michael Hoffman <br> Utah</P>
             <button onclick="geeks()">Last Modification:</button>
@@ -113,7 +72,6 @@
     </div>
     <script src=scripts/getdates.js></script>
     <script src="scripts/windchill.js"></script>
-    <script src="scripts/visits.js"></script>
 
 </body>
 
