@@ -1,331 +1,211 @@
-
-
-div {
-    max-width: 1600px;
-    margin: 0 auto;
-}
-
-main section img {
-    box-sizing: border-box;
-}
-
-main.home-grid {
-    display: grid;
-    gap: 50px 50px;
-
-}
-
-
-
 header {
-    display: grid;
+  background-color: rgb(0, 110, 182);
+  display: grid;
+  top: 20px;
 }
 
-header.logo {
-    grid-column-start: 0;
-    grid-column-end: 2;
-    justify-content: left;
+nav{
+    text-align: center;
 }
+
+
+main {
+  text-align: center;
+  margin-left: 150px;
+  justify-content: center;
+  justify-self: center;
+}
+.logo {
+  padding: 25px;
+  top: 2px;
+  grid-column: 2/3;
+}
+
+h1 {
+  color: black;
+  grid-column: 3/6;
+  padding: 50px;
+  top: 2px;
+}
+
+
+main {
+padding-right: 150px;
+}
+
+h2 {
+  padding: 1.5rem;
+}
+
+
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 nav {
-    display: flex;
-    justify-content: space-around;
-}      
-
-h1{
-    color: white;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  font-size: 24px;
+  border-style: groove;
+  padding: 1rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
 }
 
-#mode {
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
-	font-size: 3rem;
-	cursor: pointer;
+nav ul {
+  list-style-type: none;
 }
 
-h2,li {
-    color: white;
-    text-align: right;
-    padding-right: 100px;
-}
-h3{
-    text-align: right;
-    color: white;
+nav a:hover {
+  border: 1px solid#fff;
 }
 
-
-
-#hero-pic {
-padding-top: 50px;
-justify-content: left;
+.active {
+  color: yellow;
 }
 
 nav a {
-    text-align: center;
-    color: rgb(8, 8, 8);
-    text-decoration: none;
-    padding: 35px;
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  margin: -5px;
+  padding: 0;
+  justify-content: space-around;
+  text-decoration: none;
+  display: block;
 }
 
-#logo_link {
-    padding-top: 25px;
+nav.home {
+  text-align: center;
 }
 
-
-p {
-    grid-column: 4/10; 
-    color: white;
-    background-color:rgb(70, 70, 70)
+h2 {
+  text-align: center;
+  border-bottom: solid;
+  background-color: black;
+  color: black;
 }
 
-
-#background {
-    grid-column: 1/11;
-    grid-row: 4/9;
-    height: 725px;
-    background-color: #2b50c7;
+h3 {
+  background-color: rgb(0, 110, 182);
+  color: white;
+  font-size: 24px;
+  padding: 0.5rem;
 }
 
-
-
-main section {
-    text-align: center;
-    color: rgb(255, 255, 255);
-}
-main {
-    display: grid;
+li {
+  text-align: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0.5rem;
 }
 
-
-body {
-    background-color: #4f4f52;
-    font-family: "Tiro Gurmukhi', serif";
-    font-size: 22px;
-    margin: 0;
-    padding: 0;
+.Card1 {
+  border-style: groove;
 }
 
-header {
-    background-color:#ffffff;
-    font-family: "Playfair Display, serif"; 
+.card2 {
+  border-style: groove;
 }
 
 footer {
-    background-color: #ffffff;
-    padding: 15px 10px; 
-    margin-top: 200px;
-    font-family: "Playfair Display, serif"; 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: rgb(0, 0, 0);
-}
-
-h2,h3{
-    color: black;
-}
-
-footer .social img {
-    padding-top: 15px;
-}  
-
-.msg {
-    background-color: #283636;  
-    color: white;
-    padding: 35px;
-    line-height: 1.5em;
-    grid-column: 6/10;
-    grid-row: 6/7;
-    box-shadow: 5px 5px 10px #6f7364;
-}
-
-.home-title {
-    font-family: "Playfair Display, serif"; 
-    font-size: 2em;
-    margin-top: 10px;
-} 
-
-.grid{
-    display: grid;
-    background: gray;
-    grid-gap: 15px;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(2, auto);
-    grid-auto-rows: minmax(50px, auto);
-  }
-  
-  .sidebar{
-    grid-column: 1/2;
-    background-color: white;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-  }
-  
-  .navbar{
-      grid-column: 2/3;
-    background-color: white;
-    height: 50px;
-  
-  }
-  .section2{
-      grid-column: 2/3;
-    background-color: white;
-    height: 300px;
-  
-  }
-  .section4{
-      grid-column: 2/3;
-    background-color: white;
-      height: 300px;
-  }
-  
-  .section3{
-    grid-column: 1/2;
-    background-color: white;
-    height: 200px;
-      align-items: center;
-    width: 300px;
-  }
-  
-  .section5{
-    grid-column: 1/2;
-    background-color: white;
-      height: 100px;
-    align-items: center;
-    width: 300px;
-  
-  }
-
-
-
-  
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
-  
-  /* Add some shadows to create a card effect */
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Some left and right padding inside the container */
-  .container {
-    padding: 0 16px;
-  }
-  
-  /* Clear floats */
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .title {
-    color: rgb(255, 255, 255);
-  }
-  
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  .button:hover {
-    background-color: #555;
-  }
-
-@media screen and (max-width: 900px) {
-    #hero, .home-grid {
-        display: block;
-        height: auto;
-    }
-    nav, footer {
-        flex-direction: column;
-    }
-    nav a {
-        display: block;
-        padding: 15px;
-    }
-    #hero {
-        margin-top: 0;
-    }
-    #hero-msg {
-        margin-top: 0;
-    }
-    #hero-msg h4 {
-        display: none;
-    }
-    .home-title {
-        font-size: 25px;
-        color: #6f7364;
-    }
-    .rivers-card, .camping-card, .rapids-card { 
-        margin: 50px auto;
-        width: 60%;
-    }
-    #background {
-        display: none;
-    }
-    .mountains, .msg {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-    }
-    footer {
-        margin-top: 25px;
-    }
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  text-align: center;
+  background-color: rgb(0, 110, 182);
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  min-height: 50px;
 }
 
 body {
-	height: 100vh;
-	display: flex;
-	place-items: center;
-	justify-content: center;
-	font-family: Roboto, sans-serif;
+  font-family: "Sansita", sans-serif;
 }
 
-main {
-	margin: 0;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 1rem;
-	width: 760px;
-	background-color: rgba(225, 225, 255, 0.2);
-}
-
+.card2 h3,
 p {
-	margin: 1rem;
-	display: flex;
+  padding: 0.5rem;
 }
 
-.label {
-	display: block;
-	width: 175px;
-	font-weight: 700;
-	color: navy;
-	text-align: right;
-	margin-right: 10px;
+/* Mobile View ***************/
+#menu {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  background-color: #eee;
+  color: #000;
 }
 
-.smaller {
-	font-size: smaller;
+#menu::before {
+  content: "≡";
 }
 
+nav {
+  background-color: rgb(0, 0, 0);
+}
+.navigation {
+  list-style: none;
+  margin: 0 auto;
+  max-width: 760px;
+}
 
+.navigation li {
+  display: none;
+}
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: left;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  transition: 0.5s;
+  font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+navigation a:active {
+  color: white;
+  background-color: black;
+}
+
+.show li {
+  display: block;
+}
+
+#menu.show::before {
+  content: "X";
+}
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
+@media only screen and (min-width: 40em) {
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block; /* change state in small view */
+    flex: 1 1 100%;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  #menu {
+    display: none;
+  }
+}
+
+/* Larger Views ******************************/
+@media (min-width: 640px) {
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1 1 100%;
+  }
+}
